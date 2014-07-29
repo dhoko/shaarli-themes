@@ -1,11 +1,11 @@
-# Themes for Shaarli
+## Shaarli-themes
 A collection of themes/stylesheets for [Shaarli](https://github.com/sebsauvage/Shaarli).
 
-Add your themes under the `themes/yourthemename` directory (with some screenshots and a proper free software license and send a pull request.
-Eventually it could be submitted for upstream integration.
-
-Happy hacking!
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/nodiscc/shaarli-themes/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+## Usage
+```
+cd /your/shaarli/directory/inc/
+git clone https://github.com/nodiscc/shaarli-themes themes/
+#or git submodule add https://github.com/nodiscc/shaarli-themes themes/
+cp themes/yourthemename.css user.css
+#or ln -s themes/yourthemename.css user.css
+```
