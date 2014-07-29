@@ -1,8 +1,12 @@
-<?php
+###Download css styles for shaarlis listed in an opml file
+Example php script:
+
+```
+<!---- ?php --->
 
 /**
  * Source: https://github.com/Riduidel
- * url of the opml file of the planet shaarli
+ * Download css styles for shaarlis listed in an opml file
  */
 define("SHAARLI_RSS_OPML", "https://www.ecirtam.net/shaarlirss/custom/people.opml");
 
@@ -144,4 +148,5 @@ function findKnownStyles() {
 $knownStyles = findKnownStyles();
 copyUserStylesFrom(createShaarliHashFromOPMLL(SHAARLI_RSS_OPML), $knownStyles);
 
-?>
+<!--- ? ---->
+```

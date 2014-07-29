@@ -9,3 +9,6 @@ git clone https://github.com/nodiscc/shaarli-themes themes/
 cp themes/yourthemename.css user.css
 #or ln -s themes/yourthemename.css user.css
 ```
+
+## More
+ * [Download css styles for shaarlis listed in an opml file](download-styles-from-opml.md)
