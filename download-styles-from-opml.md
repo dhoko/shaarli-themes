@@ -2,7 +2,9 @@
 Example php script:
 
 ```
-<!---- ?php --->
+<!---- ?php -->
+<!---- Copyright (c) 2014 Nicolas Delsaux (https://github.com/Riduidel) -->
+<!---- License: zlib (http://www.gzip.org/zlib/zlib_license.html) -->
 
 /**
  * Source: https://github.com/Riduidel
