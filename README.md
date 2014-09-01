@@ -11,4 +11,4 @@ cp themes/yourthemename.css user.css
 ```
 
 ## More
- * [Download css styles for shaarlis listed in an opml file](download-styles-from-opml.md)
+More info on themes on [Shaarli's wiki](https://github.com/shaarli/Shaarli/wiki#changing-theme)
