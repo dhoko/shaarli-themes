@@ -62,12 +62,12 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 /* Small tab on the left of each link with edit/delete buttons. */
 .button_edit, .button_delete { border-radius:0; box-shadow:none; border-style:none; border-width:0; padding:0; background:none; }
 .linkeditbuttons {
-    position:absolute;
-    left:-1px;
-    padding:4px 2px 2px 2px;
-    background-color:#f0f0f0;
-    border-radius: 0px 6px 6px 0px;
-    box-shadow:0px 0px 3px 0px #333333;
+    position: absolute;
+    left: 5px;
+    padding: .25em;
+    background-color: #F2F2F2;
+    top: 5px;
+    border: 1px solid white;
 }
 
 #pageheader #logo{
@@ -171,8 +171,8 @@ cursor:pointer;
     background: #E9FFCE;
 }
 */
-#linklist li.private { background: rgb(255, 241, 156) url('../images/private.png') no-repeat 10px center; padding-left:60px; }
-.private  .linktitle a {color:#969696;}
+#linklist li.private { background: rgb(255, 205, 205) }
+.private  .linktitle a {color:#555;}
 .linktitle { font-size:14pt; font-weight:bold; }
 .linktitle a { text-decoration: none; color:#80AD48; }
 .linktitle a:hover { color:#F57900; }
@@ -409,7 +409,8 @@ div.dailyEntryDescription { font-size:10pt; }
 
 [id="linklist"] {min-height: calc(100% - 143px)}
 [id="linklist"] li {
-    padding: 4%;
+    position: relative;
+    padding: 1.5em;
     column-break-inside: avoid;
     -webkit-column-break-inside: avoid;
        page-break-inside: avoid;
