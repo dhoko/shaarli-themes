@@ -9,6 +9,8 @@
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;font-size:16px}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-familym:onospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
+html, body {height: 100%}
+
 body {
     font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
     font-size:10pt;
@@ -169,7 +171,7 @@ cursor:pointer;
     background: #E9FFCE;
 }
 */
-#linklist li.private { background: url('../images/private.png') no-repeat 10px center; padding-left:60px; }
+#linklist li.private { background: rgb(255, 241, 156) url('../images/private.png') no-repeat 10px center; padding-left:60px; }
 .private  .linktitle a {color:#969696;}
 .linktitle { font-size:14pt; font-weight:bold; }
 .linktitle a { text-decoration: none; color:#80AD48; }
@@ -405,12 +407,13 @@ div.dailyEntryDescription { font-size:10pt; }
 *, *::before, *::after { box-sizing: border-box; }
 
 
+[id="linklist"] {min-height: calc(100% - 143px)}
 [id="linklist"] li {
     padding: 4%;
-    -webkit-column-break-inside: avoid;
     column-break-inside: avoid;
-    page-break-inside: avoid;
-         break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+       page-break-inside: avoid;
+            break-inside: avoid-column;
     margin-bottom: 10px;
     background: white;
     border: 1px solid #a5a5a5; box-shadow: 0 2px 2px 0 rgba(0,0,0,.235);
@@ -421,33 +424,33 @@ div.dailyEntryDescription { font-size:10pt; }
 [id="linklist"] ul {
     min-width: 320px;
     -webkit-column-width: 320px;
-    -moz-column-width: 320px;
-         column-width: 320px;
+       -moz-column-width: 320px;
+            column-width: 320px;
     -webkit-column-gap: 15px;
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
     width: 95%;
     margin: 1em auto;
     overflow: auto;
     padding: 0 2%;
     -webkit-columns: 2;
-    -moz-columns: 2;
-         columns: 2;
+       -moz-columns: 2;
+            columns: 2;
 }
 
 @media(max-width: 650px) {
     [id="linklist"] ul {
         -webkit-columns: 1;
-        -moz-columns: 1;
-             columns: 1;
+           -moz-columns: 1;
+                columns: 1;
     }
 }
 
 @media(min-width: 1500px) {
     [id="linklist"] ul {
         -webkit-columns: 3;
-        -moz-columns: 3;
-             columns: 3;
+           -moz-columns: 3;
+                columns: 3;
     }
 }
 
